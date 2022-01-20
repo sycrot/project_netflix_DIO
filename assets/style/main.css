@@ -1,0 +1,93 @@
+:root {
+    --vermelho: #e50914;
+    --preta: #141414;
+}
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+body {
+    background-color: var(--preta);
+    font-family: sans-serif;
+    color: #fff;
+}
+
+.logo {
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 38px;
+    margin-right: 30px;
+}
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+}
+header nav a:hover {
+    color: #e9e9e9;
+}
+
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0.5), rgba(0,0,0,0.1)), url(../img/tWtGNTJUAuiM2O9wv0jejw45Sji.jpg);
+
+    height: 400px;
+    background-size: 100%;
+    background-position: 5% 15%;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 0 40px;
+}
+
+.filme-principal .description {
+    margin-bottom: 30px;
+}
+
+.titulo {
+    font-size: 38px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+.botao {
+    background-color: rgba(0,0,0,0.1);
+    border: none;
+    color: #fff;
+    padding: 16px 38px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    border-radius: 3%;
+}
+.botao:hover {
+    color: #000;
+    background: #fff;
+}
+.botao i {
+    margin-right: 12px;
+    font-size: 18px;
+}
+
+.box-film {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carousel-films {
+    margin-top: 10px;
+}
